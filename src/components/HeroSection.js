@@ -1,4 +1,5 @@
 import CustomImage from "./CustomImage";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   const images = [
@@ -19,7 +20,7 @@ export default function HeroSection() {
       <div className="col typography">
         <h1 className="title">About Us</h1>
         <p className="info">FoodieSpace is a place where you can please your soul and tummy with delicious food recepies of all cuisine. And our service is absolutely free. So start exploring now.</p>
-        <button className="btn">Explore Now</button>
+        <Link to={"/recipes"}button className="btn">Explore Now</Link>
       </div>
       <div className="col gallery">
         {images.map((src, index) => (

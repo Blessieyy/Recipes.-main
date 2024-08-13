@@ -4,8 +4,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
  
 import Home from "./Pages/Home";
+import Login from"./Pages/Login";
+import Register from"./Pages/Register";
 import Recipes from "./Pages/Recipes";
 import Settings from "./Pages/Settings";
+import Addrecipes from "./Pages/Addrecipes";
 
 function App() {
   return (
@@ -15,8 +18,11 @@ function App() {
       <div className="container main">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/settings" element={<Settings/>} />
+        <Route path="/addrecipes" element={<Addrecipes/>} />
       </Routes>
       </div>
    <Footer />
